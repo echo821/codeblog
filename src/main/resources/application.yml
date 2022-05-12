@@ -1,0 +1,19 @@
+server:
+  port: 9003
+spring:
+  datasource:
+    username: codeblog
+    password: code
+    url: jdbc:mysql://43.138.11.141:3306/codeblog?serverTimezone=UTC&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialSize: 5
+    maxActive: 20
+    type: com.mysql.cj.jdbc.MysqlConnectionPoolDataSource
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
